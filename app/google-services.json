@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "493516419260",
+    "project_id": "tutorg-635a1",
+    "storage_bucket": "tutorg-635a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493516419260:android:b751149d150ffeca4160b9",
+        "android_client_info": {
+          "package_name": "org.tutorg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493516419260-vbe9246d13kljn724sa5ssj1ss9nmc8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJT0SPngX4JX8Q__BdW94qYWiPOstLBdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493516419260-vbe9246d13kljn724sa5ssj1ss9nmc8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
