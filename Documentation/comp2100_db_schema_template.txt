@@ -1,0 +1,53 @@
+//Database Schema
+//Edit using dbdiagram.io
+Table users {
+  id integer pk
+  first_name string(64)
+  last_name string(64)
+  preferred_name string(64)
+}
+
+Table students {
+  id integer [ref: - users.id]
+  year_level int
+  subjects string(64) [ref: < subjects.id]
+  assigned_tutor boolean
+  password_hash string(128)
+  tutor_id integer [ref: > users.id]
+}
+
+Table tutors {
+  id integer [ref: - users.id]
+  first_name string(64)
+  last_name string(64)
+  preferred_name string(64)
+  date_of_birth date
+  description string(max)
+  subjects string(64) [ref: < subjects.id]
+  is_admin boolean
+}
+
+Table job {
+  id integer pk
+  subjects string(64) [ref: - subjects.id]
+  tutor int [ref: - users.id]
+  student int [ref: - users.id]
+}
+
+Table subjects {
+  id integer pk
+  subject_name string(64)
+}
+
+Table chat_conversation {
+  id integer pk
+  user_1 int [ref: - users.id]
+  user_2 int [ref: - users.id]
+}
+
+Table chat_messages{
+  id integer pk
+  message string(max)
+  sender int [ref: - users.id]
+  receiver int [ref: - users.id]
+}

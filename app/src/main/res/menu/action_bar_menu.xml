@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chat_button"
+        android:title="Chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/chat"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/add_listing_button"
+            android:title="Add Tutor"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_add_tutor"
+        />
+
+    <item android:id="@+id/logout_button"
+            android:title="Logout"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_logout"
+            />
+
+</menu>
